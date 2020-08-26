@@ -1,0 +1,20 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- none
+
+pool:
+  vmImage: 'ubuntu-latest'
+  
+
+steps:
+  - 
+- task: AzureKeyVault@1
+  inputs:
+    azureSubscription: 'OmarBlacck-subscription(dc3f1b56-b638-469f-a845-bef5c3cf2a72)'
+    KeyVaultName: 'PipelinesKeyVault14621'
+    SecretsFilter: '*'
+    RunAsPreJob: false
