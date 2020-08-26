@@ -11,7 +11,6 @@ pool:
   
 
 steps:
-  - 
 - task: AzureKeyVault@1
   inputs:
     azureSubscription: 'OmarBlacck-subscription(dc3f1b56-b638-469f-a845-bef5c3cf2a72)'
